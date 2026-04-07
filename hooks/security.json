@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "./scripts/hooks/security-check.sh",
+        "powershell": "./scripts/hooks/security-check.ps1",
+        "cwd": ".",
+        "timeoutSec": 10,
+        "comment": "Enforce security policies on all tool calls"
+      }
+    ]
+  }
+}
